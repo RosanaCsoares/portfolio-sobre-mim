@@ -41,16 +41,20 @@ Sempre que há um push na branch `main`, o pipeline executa:
 ---
 
 ## ☁️ Infraestrutura 
-1.GitHub/br
+1.GitHub
+
 O GitHub será utilizado para armazenar o código-fonte do projeto e controlar as alterações realizadas durante o desenvolvimento da página.
 
-2. GitHub Actions /br
+2. GitHub Actions
+   
 O GitHub Actions será utilizado para automatizar o processo de Integração Contínua (CI). Sempre que uma alteração for enviada ao repositório, o pipeline executará verificações e testes automatizados para validar o projeto.
 
-3. Terraform/br
+4. Terraform
+   
 O Terraform será utilizado como ferramenta de Infraestrutura como Código (IaC), permitindo definir e gerenciar os recursos de infraestrutura de forma automatizada e padronizada.
 
-4. AWS S3/br
+6. AWS S3
+   
 O Amazon S3 foi definido nos scripts Terraform como serviço responsável pela hospedagem do site estático, permitindo disponibilizar a aplicação na nuvem.
 
 
