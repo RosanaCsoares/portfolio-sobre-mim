@@ -1,0 +1,21 @@
+name: Pipeline CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  teste:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Executar testes
+        run: |
+          chmod +x test.sh
+          ./test.sh
