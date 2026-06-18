@@ -1,0 +1,6 @@
+services:
+  portfolio:
+    build: .
+    container_name: portfolio-container
+    ports:
+      - "80:80"
